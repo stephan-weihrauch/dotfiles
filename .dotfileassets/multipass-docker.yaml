@@ -1,0 +1,23 @@
+---
+users:
+  - name: stephanweihrauch
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    ssh_import_id: gh:stephanweihrauch
+
+package_update: true
+packages:
+  - vim
+  - docker
+  - avahi-daemon
+  - apt-transport-https
+  - ca-certificates
+  - curl
+  - gnupg
+  - lsb-release
+
+runcmd:
+  - sudo curl -fsSL https://get.docker.com | sudo bash
+  - sudo systemctl enable docker
+  - sudo systemctl enable -s HUP ssh
+  - sudo groupadd docker
+  - sudo usermod -aG docker stephanweihrauch
