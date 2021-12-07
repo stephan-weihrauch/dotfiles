@@ -14,7 +14,6 @@ order to set up a new system with these dotfiles, do the following:
 As my main device i use Macbook Pro 2019
 
 $ system_profiler SPHardwareDataType | grep -v "UDID\|UUID\|Serial" | pbcopy
-Hardware:
 
     Hardware Overview:
 
