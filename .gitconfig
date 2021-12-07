@@ -1,0 +1,60 @@
+[core]
+        excludesfile = ~/.gitignore_global
+        #	pager = delta --plus-color="#012800" --minus-color="#340001" --theme='Monokai Extended'
+        #	editor = nvim
+[push]
+        default = current
+[fetch]
+        prune = true
+[interactive]
+        diffFilter = delta --color-only
+[credential]
+        helper = osxkeychain
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+[user]
+        name = stephan.weihrauch
+        email = stephan.weihrauch@accenture.com
+[includeIf "gitdir:Repos/ACN_Repos/"]
+        path = .gitconfig-accenture
+[includeIf "gitdir:Repos/MMS_Repos/"]
+        path = .gitconfig-mediamarktsaturn
+[includeIf "gitdir:Repos/Privat_Repos"]
+        path = .gitconfig-privat
+        #[alias]
+        #	plog = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+        #	yolo = !git add -A && git commit -m \"$(curl --silent --fail http://whatthecommit.com/index.txt)\"
+[fetch "origin"]
+        prune = true
+[pull]
+        rebase = true
+[commit]
+        #	gpgsign = false
+        template = ~/.gitmessage
+        #[gpg]
+        #	program = /usr/local/MacGPG2/bin/gpg2
+[init]
+        templatedir = /Users/stephan.weihrauch/.acn-security-tools/git-template
+        defaultBranch = master
+        
+        # define command which will be used when "nvim" is set as a merge tool
+        #[mergetool "nvim"]
+        #  cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
+        # set "nvim" as tool for merging
+        #[merge]
+        #  tool = nvim
+        # automatically launch merge tool without displaying a prompt
+        #[mergetool]
+        #  prompt = false
+        
+        #Host *
+        #   UseKeychain yes
+        #   AddKeysToAgent yes
+        #   IdentityFile ~/.ssh/id_rsa
+        #   IdentityFile ~/.ssh/id_ed25519
+        #   IdentityFile ~/.ssh/user2
+        #   Host docker.local
+        #   StrictHostKeyChecking no

@@ -1,0 +1,10 @@
+_Store
+.idea
+*.iml
+*.pem
+*.key
+*.tags
+tags
+Makefile
+.config/fish/fundle/**
+.terraform.lock.hcl
