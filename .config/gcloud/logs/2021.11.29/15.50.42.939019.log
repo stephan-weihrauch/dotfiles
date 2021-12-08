@@ -1,0 +1,69 @@
+2021-11-29 15:50:42,942 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2021-11-29 15:50:42,966 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'list']
+2021-11-29 15:50:42,968 DEBUG    root            Running [gcloud.projects.list] with arguments: [--filter: "NOT projectID:sys* ", --format: "table(parent.id,                projectId:label=ProjectID,                labels.business_domain,                labels.costcenter,                labels.cost-center,                labels.mms-cost-center,                labels.createdby,                labels.env,                labels.product,                labels.project,                labels.stage,                labels.contact,                labels.isdp,                labels.thi,                labels.requester)"]
+2021-11-29 15:50:42,969 INFO     root            client_filter="None" server_filter="NOT id:"sys*""
+2021-11-29 15:50:42,973 DEBUG    root            (gcloud.projects.list) You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials.
+
+If you have already logged in with a different account:
+
+    $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+Traceback (most recent call last):
+  File "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/projects/list.py", line 65, in Run
+    return projects_api.List(limit=server_limit, filter=server_filter)
+  File "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/api_lib/cloudresourcemanager/projects_api.py", line 46, in List
+    client = projects_util.GetClient(api_version)
+  File "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/api_lib/cloudresourcemanager/projects_util.py", line 56, in GetClient
+    return apis.GetClientInstance(_API_NAME, version)
+  File "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 275, in GetClientInstance
+    return apis_internal._GetClientInstance(api_name, api_version, no_http, None,
+  File "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis_internal.py", line 167, in _GetClientInstance
+    http_client = transports.GetApitoolsTransport(
+  File "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/credentials/transports.py", line 80, in GetApitoolsTransport
+    session = requests.GetSession(
+  File "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/credentials/requests.py", line 78, in GetSession
+    session = request_wrapper.WrapQuota(session, enable_resource_quota,
+  File "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/credentials/requests.py", line 111, in WrapQuota
+    quota_project = self.QuotaProject(enable_resource_quota,
+  File "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/credentials/transport.py", line 55, in QuotaProject
+    creds = store.LoadIfEnabled(allow_account_impersonation, use_google_auth)
+  File "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 452, in LoadIfEnabled
+    return Load(
+  File "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 557, in Load
+    cred = _Load(account, scopes, prevent_refresh, use_google_auth)
+  File "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 671, in _Load
+    raise creds_exceptions.NoActiveAccountException(
+googlecloudsdk.core.credentials.exceptions.NoActiveAccountException: You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials.
+
+If you have already logged in with a different account:
+
+    $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+2021-11-29 15:50:42,983 ERROR    root            (gcloud.projects.list) You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials.
+
+If you have already logged in with a different account:
+
+    $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
