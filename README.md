@@ -29,8 +29,4 @@ $ system_profiler SPHardwareDataType | grep -v "UDID\|UUID\|Serial" | pbcopy
       Memory: 16 GB
       System Firmware Version: 1715.40.15.0.0 (iBridge: 19.16.10549.0.0,0)
       OS Loader Version: 540.40.4~45
-<<<<<<< HEAD
       Activation Lock Status: Disabled
-=======
-      Activation Lock Status: Disabled
->>>>>>> b9cd3cb (add Brewfile and some configs github, tmux)
