@@ -1,0 +1,35 @@
+{
+    "editor.suggestSelection": "first",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "One Dark Pro Flat",
+    "markdownlint.config": {
+        "MD013": false,
+        "MD024": false,
+        "MD029": false,
+        "MD033": false,
+        "MD037": false
+    },
+    "workbench.colorCustomizations": {
+        "[One Dark Pro Flat]": {
+            "editorWhitespace.foreground": "#9a9797",
+        },
+    },
+    "window.zoomLevel": 2,
+    "terminal.external.osxExec": "iTerm2.app",
+    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+    "terminal.integrated.fontFamily": "MesloLGMDZ Nerd Font Mono",
+    "git.enableSmartCommit": true,
+    "explorer.confirmDelete": false,
+    "git.path": " /usr/local/bin/git",
+    "editor.renderWhitespace": "all",
+    "oneDarkPro.vivid": true,
+    "git.confirmSync": false,
+    "redhat.telemetry.enabled": true,
+    "explorer.confirmDragAndDrop": false
+}
