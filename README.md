@@ -60,7 +60,7 @@ brew install yadm
 ### Clone and bootstrap
 
 ```bash
-yadm clone https://github.com/stephan-weihrauch/dotfiles.git --bootstrap # https!
+yadm clone https://github.com/stephan-weihrauch/dotfiles.git --bootstrap 
 ```
 
 **NB:** Bootstraping updates the remote url to ssh, so an ssh key will have to be configured after this (see below).
