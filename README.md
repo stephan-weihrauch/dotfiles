@@ -30,3 +30,67 @@ $ system_profiler SPHardwareDataType | grep -v "UDID\|UUID\|Serial" | pbcopy
       System Firmware Version: 1715.40.15.0.0 (iBridge: 19.16.10549.0.0,0)
       OS Loader Version: 540.40.4~45
       Activation Lock Status: Disabled
+
+# macOS setup
+
+## Pre-setup
+
+### Install `homebrew`
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### Install `yadm`
+
+```bash
+brew install yadm
+```
+
+### Log into the Mac App Store
+
+(for `mas`) via `App Store > Preferences > Sign in`
+
+## Setup
+
+### Clone and bootstrap
+
+```bash
+yadm clone https://github.com/stephan-weihrauch/dotfiles.git --bootstrap # https!
+```
+
+**NB:** Bootstraping updates the remote url to ssh, so an ssh key will have to be configured after this (see below).
+
+**NB:** There might be some need to enter the sudo password.
+
+**NB:** Mac App Store installs will ask for a login.
+
+## Done
+
+----
+
+## Extra
+
+### Add ssh key
+
+Configure (new or existing) [ssh key and add it to GitHub](https://help.github.com/articles/connecting-to-github-with-ssh/), then [add key to ssh-agent and `~/.ssh/config`](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#adding-your-ssh-key-to-the-ssh-agent). Then test:
+
+```
+ssh -T git@github.com
+```
+
+### Cheat sheet
+
+```bash
+# yadm wraps git, e.g.:
+yadm status
+yadm add <file>
+yadm commit
+yadm push
+# etc
+
+# List files under yadm control:
+yadm list -a
+```
+
+See: <https://yadm.io/docs/common_commands>
