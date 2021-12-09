@@ -51,6 +51,13 @@ sudo chown -R $(whoami) /usr/local/share/zsh /usr/local/share/zsh/site-functions
 brew install yadm
 ```
 
+```bash
+defaults write com.apple.Finder AppleShowAllFiles true
+
+killall Finder
+```
+
+
 ### Log into the Mac App Store
 
 (for `mas`) via `App Store > Preferences > Sign in`
