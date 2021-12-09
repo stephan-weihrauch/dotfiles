@@ -43,6 +43,7 @@ if [ "$system_type" = "Darwin" ]; then
     ) | crontab -
   fi
 
+  brew bundle install
 #-----------------------------------------
 # * Configure iTerm2 (to use ~/.iterm2/)
 #   https://yadm.io/docs/bootstrap
