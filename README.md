@@ -49,6 +49,7 @@ sudo chown -R $(whoami) /usr/local/share/zsh /usr/local/share/zsh/site-functions
 
 ```bash
 brew install yadm
+brew bundle install
 ```
 
 ```bash
