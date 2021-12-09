@@ -39,7 +39,7 @@ if [ "$system_type" = "Darwin" ]; then
   if [ $(crontab -l | grep brew | wc -l) -eq 0 ]; then
     (
       crontab -l
-      echo "0 */3 * * * brew bundle dump --force --file ~/.Brewfile"
+      echo "0 */3 * * * brew bundle dump --force --file ~/Brewfile"
     ) | crontab -
   fi
 
