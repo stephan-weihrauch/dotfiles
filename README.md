@@ -41,6 +41,10 @@ $ system_profiler SPHardwareDataType | grep -v "UDID\|UUID\|Serial" | pbcopy
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+```bash
+sudo chown -R $(whoami) /usr/local/share/zsh /usr/local/share/zsh/site-functions
+```
+
 ### Install `yadm`
 
 ```bash
