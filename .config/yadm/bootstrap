@@ -30,7 +30,7 @@ if [ "$system_type" = "Darwin" ]; then
     echo "Oh-My-ZSH is already installed ..."
   fi
 
-  if [ -f "$HOME/.Brewfile" ]; then
+  if [ -f "$HOME/Brewfile" ]; then
     echo "Updating homebrew bundle"
     brew bundle --global
   fi
