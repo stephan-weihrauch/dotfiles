@@ -45,13 +45,27 @@ $ system_profiler SPHardwareDataType | grep -v "UDID\|UUID\|Serial" | pbcopy
 sudo chown -R $(whoami) /usr/local/share/zsh /usr/local/share/zsh/site-functions
 ```
 
+### Disable Gatekeeper on macOS 
+
+```bash
+sudo spctl --master-disable
+```
+
 ### Install `yadm`
 
 ```bash
 brew install yadm
+```
+
+### Brew install packages
+
+```bash
 brew bundle install
 ```
 
+
+
+### Mac show hidden files
 ```bash
 defaults write com.apple.Finder AppleShowAllFiles true
 
