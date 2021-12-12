@@ -82,14 +82,8 @@ killall Finder
 ### Clone and bootstrap
 
 ```bash
-yadm clone https://github.com-stephan-weihrauch/stephan-weihrauch/dotfiles.git --bootstrap 
+yadm clone git@github.com-stephan-weihrauch:stephan-weihrauch/dotfiles.git --bootstrap 
 ```
-
-**NB:** Bootstraping updates the remote url to ssh, so an ssh key will have to be configured after this (see below).
-
-**NB:** There might be some need to enter the sudo password.
-
-**NB:** Mac App Store installs will ask for a login.
 
 ## Done
 
