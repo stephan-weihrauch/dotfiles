@@ -82,7 +82,7 @@ killall Finder
 ### Clone and bootstrap
 
 ```bash
-yadm clone git@github.com-stephan-weihrauch:stephan-weihrauch/dotfiles.git --bootstrap 
+yadm clone git@github.com-stephan-weihrauch:stephan-weihrauch/dotfiles.git 
 ```
 
 ## Done
