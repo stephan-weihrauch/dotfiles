@@ -8,7 +8,6 @@ ms-azuretools.vscode-docker
 ms-vscode-remote.remote-containers
 redhat.java
 redhat.vscode-yaml
-Shan.code-settings-sync
 TakumiI.markdowntable
 VisualStudioExptTeam.vscodeintellicode
 vscjava.vscode-java-debug
