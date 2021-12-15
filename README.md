@@ -89,15 +89,7 @@ yadm clone git@github.com-stephan-weihrauch:stephan-weihrauch/dotfiles.git
 
 ----
 
-## Extra
 
-### Add ssh key
-
-Configure (new or existing) [ssh key and add it to GitHub](https://help.github.com/articles/connecting-to-github-with-ssh/), then [add key to ssh-agent and `~/.ssh/config`](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#adding-your-ssh-key-to-the-ssh-agent). Then test:
-
-```
-ssh -T git@github.com
-```
 
 ### Cheat sheet
 
