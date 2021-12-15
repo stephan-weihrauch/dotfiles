@@ -22,7 +22,7 @@
     },
     "window.zoomLevel": 2,
     "terminal.external.osxExec": "iTerm2.app",
-    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+    "terminal.integrated.defaultProfile.osx": "fish",
     "terminal.integrated.fontFamily": "MesloLGMDZ Nerd Font Mono",
     "git.enableSmartCommit": true,
     "explorer.confirmDelete": false,
