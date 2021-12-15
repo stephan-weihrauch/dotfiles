@@ -57,13 +57,6 @@ sudo spctl --master-disable
 brew install yadm
 ```
 
-### Brew install packages
-
-```bash
-brew bundle install
-```
-
-
 
 ### Mac show hidden files
 ```bash
@@ -71,7 +64,6 @@ defaults write com.apple.Finder AppleShowAllFiles true
 
 killall Finder
 ```
-
 
 ### Log into the Mac App Store
 
@@ -84,6 +76,14 @@ killall Finder
 ```bash
 yadm clone git@github.com-stephan-weihrauch:stephan-weihrauch/dotfiles.git 
 ```
+
+
+### When there is an error try Brew install packages and then repeat yadm clone
+
+```bash
+brew bundle install
+```
+
 
 ## Done
 
