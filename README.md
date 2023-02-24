@@ -18,18 +18,19 @@ $ system_profiler SPHardwareDataType | grep -v "UDID\|UUID\|Serial" | pbcopy
     Hardware Overview:
 
       Model Name: MacBook Pro
-      Model Identifier: MacBookPro16,1
-      Processor Name: 6-Core Intel Core i7
-      Processor Speed: 2,6 GHz
-      Number of Processors: 1
-      Total Number of Cores: 6
-      L2 Cache (per Core): 256 KB
-      L3 Cache: 12 MB
-      Hyper-Threading Technology: Enabled
-      Memory: 16 GB
-      System Firmware Version: 1715.40.15.0.0 (iBridge: 19.16.10549.0.0,0)
-      OS Loader Version: 540.40.4~45
+      Model Identifier: MacBookPro18,1
+      Model Number: Z14V0005MD/A
+      Chip: Apple M1 Pro
+      Total Number of Cores: 10 (8 performance and 2 efficiency)
+      Memory: 32 GB
+      System Firmware Version: 8419.80.7
+      OS Loader Version: 8419.80.7
+      Serial Number (system): WCWT9D40FL
+      Hardware UUID: 39978B43-B3D3-57DE-81A2-EC7E24A3BA0F
+      Provisioning UDID: 00006000-001250110123801E
       Activation Lock Status: Disabled
+
+
 
 # macOS setup
 
